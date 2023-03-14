@@ -1,0 +1,22 @@
+  declare
+  2  a number;
+  3  b number;
+  4  c number;
+  5  begin
+  6  a:=2;
+  7  b:=3;
+  8  c:=4;
+  9  if a>b then
+ 10  if a>c then
+ 11  dbms_output.put_line('a is greater');
+ 12  else dbms_output.put_line('c is greater');
+ 13  end if;
+ 14  elsif b>c then
+ 15  dbms_output.put_line('b is greater');
+ 16  else dbms_output.put_line('c is greater');
+ 17  end if;
+ 18  end;
+ 19  /
+c is greater
+
+PL/SQL procedure successfully completed.
