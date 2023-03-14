@@ -1,0 +1,19 @@
+  declare
+  2  i number;
+  3  n number;
+  4  fact number;
+  5  begin
+  6  i:=1;
+  7  fact:=1;
+  8  n:=&n;
+  9  for i IN 1..n
+ 10  loop
+ 11  fact:=fact*i;
+ 12  end loop;
+ 13  dbms_output.put_line('factorial of the n is'||fact);
+ 14  end;
+ 15  /
+Enter value for n: 5
+factorial of the n is120
+
+PL/SQL procedure successfully completed.
